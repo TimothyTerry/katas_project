@@ -1,3 +1,12 @@
+// Michael Wildnauer  
+//Joshuagaucin
+//Giovanni
+
+
+
+
+
+
 const mainElement = document.querySelector('body')
 const sampleArray = [
     469, 755, 244, 245, 758, 450, 302, 20, 712, 71,
@@ -22,7 +31,7 @@ kata1heading.id = "h1"
 const section1List = document.createElement("ul")
 kata1heading.append(section1List)
 
-for (let counter1 = 0; counter1 < 20; counter1++) {
+for (let counter1 = 0; counter1 <= 20; counter1++) {
     const listElement = document.createElement("li")
     section1List.append(listElement)
     listElement.append(counter1)
@@ -72,7 +81,7 @@ kata4heading.id = "h1"
 const section4List = document.createElement("ul")
 kata4heading.append(section4List)
 
-for (let counter4 = 0; counter4 < 100; counter4 += 5) {
+for (let counter4 = 0; counter4 <= 100; counter4 += 5) {
     const listElement = document.createElement("li")
     section4List.append(listElement)
     listElement.append(counter4)
@@ -88,7 +97,7 @@ kata5heading.id = "h1"
 const section5List = document.createElement("ul")
 kata5heading.append(section5List)
 
-for (let counter5 = 0; counter5 < 100; counter5++) {
+for (let counter5 = 0; counter5 <= 100; counter5++) {
     if ((Math.sqrt(counter5)) % 1 == 0) {
         const listElement = document.createElement("li")
         section5List.append(listElement)
@@ -189,7 +198,23 @@ for (let counter10 = 100; counter10 > 0; counter10 -= 1) {
 }
 
 
-//number 11 skip for now 
+const kata11heading = document.createElement('h1')
+kata11heading.append('kata11')
+mainElement.append(kata11heading)
+kata11heading.id = "h1"
+
+
+const section11List = document.createElement("ul")
+kata11heading.append(section11List)
+
+for (let counter11 = 1; counter11 < sampleArray.length; counter11++) {
+    
+        const listElement = document.createElement("li")
+        section11List.append(listElement)
+        listElement.append(sampleArray[counter11])
+    
+}
+
 
 
 
